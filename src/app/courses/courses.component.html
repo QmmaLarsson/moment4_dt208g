@@ -1,7 +1,28 @@
-<p>courses works!</p>
+<h1 id="heading4">Kurser</h1>
 
-<ul>
-    <li *ngFor="let course of courselist">
-        {{course.code}}
-    </li>
-</ul>
+<label for="searchBar" id="text"><b>Sök:</b></label>
+<br>
+<input type="text" name="searchBar" id="searchBar" placeholder="Sök efter kurskod eller kursnamn" [(ngModel)]="filterValue" (input)="applyFilter()">
+
+@if(filteredCourse.length === 0) {
+    <p>Inga kurser hittades...</p>
+}
+
+<table>
+    <thead>
+        <tr>
+            <th id="code"><b>Kurskod</b></th>
+            <th id="name"><b>Kursnamn</b></th>
+            <th id="progression"><b>Progression</b></th>
+            <th id="syllabys"><b>Länk</b></th>
+        </tr>
+    </thead>
+    <tbody id="table">
+        <tr *ngFor="let course of filteredCourse">
+        <td>{{course.code}}</td>
+        <td>{{course.coursename}}</td>
+        <td>{{course.progression}}</td>
+        <td> <a [href]="course.syllabus" target="_blank">Läs mer</a></td>
+        </tr>
+    </tbody>
+</table>
