@@ -1,0 +1,51 @@
+#text {
+    max-width: 450px;
+    margin: auto;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #333333;
+    margin-bottom: 20px;
+}
+
+#searchBar {
+    width: 98%;
+    padding: 1%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+th {
+    background-color: #333333;
+    color: white;
+    text-align: left;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #D4D4D4;
+}
+
+a:hover, #name:hover, #progression:hover, #code:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+td {
+    padding: 5px;
+    border-left: 1px solid #333333;
+}
+
+@media screen and (max-width: 700px) {
+    table {
+        font-size: 1.2rem;
+    }
+}

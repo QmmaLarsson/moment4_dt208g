@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+    //62,5% av 16px ger textstorlek 10px
+    font-size: 62.5%;
+}
+
+body {
+    //62,5% av 16px ger textstorlek 10px
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #333333;
+}
+
+h1 {
+    /*Textstorlek 32px som standard*/
+    font-size: 3.2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+main {
+    min-height: 100vh;
+    padding: 2%;
+    background-color: white;
+    box-shadow: 0 0 15px white;
+    //background-color: hsla(0, 0%, 100%, 0.8);
+}

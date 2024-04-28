@@ -1,9 +1,12 @@
-<h1 id="heading4">Kurser</h1>
+<h1 id="heading4">Webbutveckling - Ramschema</h1>
+
+<p id="text">Du kan filtrera ut kurser genom att skriva i sökrutan och du kan sortera kurser i bokstavsordning genom att klicka på
+    någon av rubrikerna i tabellen.</p>
 
 <label for="searchBar" id="text"><b>Filtrera kurser:</b></label>
 <br>
-<input type="text" name="searchBar" id="searchBar" placeholder="Kurskod eller kursnamn"
-    [(ngModel)]="filterValue" (input)="applyFilter()">
+<input type="text" name="searchBar" id="searchBar" placeholder="Kurskod eller kursnamn" [(ngModel)]="filterValue"
+    (input)="applyFilter()">
 
 <!-- Om inga kurser hittas vid filtreringen av kurser skrivs denna text ur-->
 @if(filteredCourse.length === 0) {
