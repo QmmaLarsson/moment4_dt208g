@@ -48,7 +48,7 @@ export class CoursesComponent {
       this.filteredCourse.sort((a, b) => {
         if (column === 'code') {
           return a.code.localeCompare(b.code);
-        } else if (column === 'name') {
+        } else if (column === 'coursename') {
           return a.coursename.localeCompare(b.coursename);
         } else if (column === 'progression') {
           return a.progression.localeCompare(b.progression);
