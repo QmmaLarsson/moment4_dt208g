@@ -36,6 +36,7 @@ export class CoursesComponent {
       course.code.toLowerCase().includes(this.filterValue.toLowerCase()) || course.coursename.toLowerCase().includes(this.filterValue.toLowerCase())
     );
   }
+  
   //Metod som körs vid klick på "Kurskod", "Kursnamn" eller "Progression"
   sortCourse(column: string): void {
     //Om samma kolumn klickas på två gången, vänd sorteringen
